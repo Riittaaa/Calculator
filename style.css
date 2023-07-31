@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    /* used to prevent accidental selection or to indicate that the text cannot be interacted with. */
+}
+
+body{
+    height:100vh;
+    background: #240046;
+    display:grid;
+    /*With "display: grid", you can control the size, alignment, and placement of items within the grid, making it a powerful tool for designing responsive and dynamic layouts. */
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.calculator{
+    background: #023e7d;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.219);
+    /*allows you to add a shadow effect to an element*/
+    margin:auto;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.calculator form input.numbers{
+    background: rgb(14, 206, 39);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  
+}
+
+form .display input{
+    text-align: right;
+    flex: 2;
+    /* This means that the item will dynamically grow twice as much as other flex items within the same container using the default value of 1. */
+    font-size: 30px;
+    box-shadow: 2px 2px 5px 2px rgba(12, 12, 12, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #218380;
+    height: 60px;
+    color: rgb(14, 13, 13);
+}
+
+form input.equal{
+    width: 145px;
+    background: orange;
+}
+
+form input.ac,form input.del{
+    background: #0fbcc9
+}
+
+.symbols{
+    background-color: #e90e8e;
+}
+
+.special{
+    background-color: indigo;
+}
+
+.calculator form input:hover {
+    color: red;
+    box-shadow: 0px 0px 50px 30px #0c0c0c25;
+}
+/* form input.equal{
+width: 145px;
+background: #005f08
+} */
+
+
